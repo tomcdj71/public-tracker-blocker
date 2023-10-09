@@ -117,7 +117,7 @@ function count_adresses_blocked(){
 
 function schedule_cron() {
     ensure_script_installed
-    [ -f "$CRON_FILE" ] || echo "0 $CRON_HOUR */2 * * root $SCRIPT_PATH" > "$CRON_FILE" && chmod 644 "$CRON_FILE"
+    [ -f "$CRON_FILE" ] || echo "0 $CRON_HOUR */2 * * root $SCRIPT_PATH --reload" > "$CRON_FILE" && chmod 644 "$CRON_FILE"
 }
 
 function reload_hosts_resolver() {
