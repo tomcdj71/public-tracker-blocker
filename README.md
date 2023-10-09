@@ -80,9 +80,8 @@
 [git]: https://tracker.debian.org/pkg/git
 ### Installation
 
-> **[?]**
-> How to install this script?
 > **NOTE**
+> **How to install this script?**
 > If you don't want to install this script, you can use the hosts.example file provided._
 
 ```bash
