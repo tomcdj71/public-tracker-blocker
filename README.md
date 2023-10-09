@@ -52,8 +52,8 @@
 
 <table><tr><td>
 
-> **[?]**
-Public Tracker Blocker is a simple script that parse url lists to add to the hosts file. It helps to block public trackers so you can't use them in your torrent clients
+> **NOTE**
+> Public Tracker Blocker is a simple script that parse url lists to add to the hosts file. It helps to block public trackers so you can't use them in your torrent clients
 
 </td></tr></table>
 
@@ -88,7 +88,7 @@ Public Tracker Blocker is a simple script that parse url lists to add to the hos
 ```bash
 cd /opt
 sudo git clone https://github.com/tomcdj71/public-tracker-blocker
-cd todolist
+cd public-tracker-blocker
 chmod +x public-tracker-blocker.sh
 sudo ln -s public-tracker-blocker.sh /usr/local/bin/public-tracker-blocker
 ```
@@ -120,7 +120,7 @@ Options:
 
 ### Standalone usage
 
-> **[?]**
+> **NOTE**
 > For a standalone use, you can simply append the content of the provided hosts.example into your existing /etc/hosts file : 
 
 ```bash
