@@ -19,9 +19,9 @@
 
 |  | |
 |---|---|
-| **Open&#160;Source** | [![BSD 3-clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tomcdj71/public-tracker-blocker/blob/main/LICENSE) |
+| **CI/CD** | [![Main](https://github.com/tomcdj71-openclassrooms/todolist/actions/workflows/update_example/badge.svg)](https://github.com/tomcdj71-openclassrooms/todolist/actions/workflows/update_example.yaml)  |
 | **Community** | [![Pull Requests welcome](https://img.shields.io/badge/PRs-welcome-ff69b4.svg?style=flat-square)](https://github.com/tomcdj71/public-tracker-blocker/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)  |
-| **CI/CD** | (coming soon)  |
+| **Open&#160;Source** | [![BSD 3-clause](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://github.com/tomcdj71/public-tracker-blocker/blob/main/LICENSE) |
 | **Maintener** | [![code with love by tomcdj71](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-tomcdj71-ff1414.svg?style=flat-square)](https://github.com/tomcdj71) |
 | **Tools** | [![better commits is enabled](https://img.shields.io/badge/better--commits-enabled?style=for-the-badge&logo=git&color=a6e3a1&logoColor=D9E0EE&labelColor=302D41)](https://github.com/Everduin94/better-commits) |
 
@@ -80,10 +80,10 @@
 [git]: https://tracker.debian.org/pkg/git
 ### Installation
 
-> **[?]**
-> How to install this script?
 > **NOTE**
-> If you don't want to install this script, you can use the hosts.example file provided._
+> **How to install this script?**
+> 
+> If you don't want to install this script, you can use the [hosts.example](./hosts.example) file provided.
 
 ```bash
 cd /opt
