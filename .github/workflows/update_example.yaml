@@ -1,0 +1,29 @@
+name: Update Hosts File
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up environment
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y curl awk git
+
+    - name: Run Script
+      run: sudo public-tracker-blocker.sh --workflow
+
+    - name: Commit and push changes
+      run: |
+        git config --global user.name 'tomcdj71'
+        git config --global user.email 'contact.tomc@yahoo.fr'
+        git add -A
+        timestamp=$(date -u)
+        git commit -m "Updated hosts file on ${timestamp}"
+        git push origin main
