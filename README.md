@@ -38,6 +38,7 @@
 - [Usage](#usage)
   - [Standard usage](#standard-usage)
   - [Standalone usage](#standalone-usage)
+  - [Custom list](#custom-list)
 - [Support](#support)
 - [Project assistance](#project-assistance)
 - [Contributing](#contributing)
@@ -138,6 +139,20 @@ grep -qxF '# DO NOT DELETE THIS LINE' /tmp/hosts.tmp || echo '# DO NOT DELETE TH
 curl -s https://raw.githubusercontent.com/tomcdj71/public-tracker-blocker/main/hosts.example >> /tmp/hosts.tmp
 sudo mv /tmp/hosts.tmp /etc/hosts
 ```
+
+### Custom list
+> **NOTE**
+> You can also add custom list to enhance the use of the script.
+
+First, create a `custom-list.txt`. This file is up to you, but consider saving the list by creating a Pull Request so all the community can use it.
+
+Once the list is created, start adding the links.
+
+On the next run, your custom lists will be fetched.
+
+> **Warning**
+> For now, only lists from github or pastebin are supported.
+> Feel free to open a Pull Request to add more supported websites.
 
 ## Support
 
