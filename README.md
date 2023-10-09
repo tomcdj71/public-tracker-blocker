@@ -87,11 +87,12 @@
 > If you don't want to install this script, you can use the [hosts.example](./hosts.example) file provided.
 
 ```bash
+sudo -i
 cd /opt
-sudo git clone https://github.com/tomcdj71/public-tracker-blocker
+git clone https://github.com/tomcdj71/public-tracker-blocker
 cd public-tracker-blocker
 chmod +x public-tracker-blocker.sh
-sudo ln -s public-tracker-blocker.sh /usr/local/bin/public-tracker-blocker
+ln public-tracker-blocker.sh /usr/local/bin/public-tracker-blocker
 ```
 
 ## Usage
@@ -102,16 +103,16 @@ sudo ln -s public-tracker-blocker.sh /usr/local/bin/public-tracker-blocker
 
 The usage is pretty simple, you only need to use this command :
 ```bash
-sudo public-tracker-blocker.sh
+public-tracker-blocker
 ```
 
 
 > **NOTE**
 > Some options are available, discover them with `public-tracker-blocker --help`
 ```console
-$ sudo public-tracker-blocker --help
+$ public-tracker-blocker --help
 
-Usage: ./public-tracker-blocker.sh [--reload] [--update] [--help]
+Usage: /usr/local/bin/public-tracker-blocker [--reload] [--update] [--help]
 Options:
   --reload              Reload network after updating hosts file
   --update              Update script to latest version
